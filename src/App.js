@@ -6,7 +6,7 @@ import requests from './api/requests';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Nav/>
       <Banner/>
       <Row
@@ -15,7 +15,6 @@ function App() {
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow
       />
-
       <Row title="Trending Now" id="TN" fetchUrl={requests.fetchTrending}/>
       <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated}/>
       <Row title="Action Movies" id="AM" fetchUrl={requests.fetchActionMovies}/>
